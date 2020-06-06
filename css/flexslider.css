@@ -1,0 +1,347 @@
+
+      /* todo el menu */
+.navbar{
+    margin-bottom: 0;
+}
+
+h1 { font-size: 66px; font-weight: 600; line-height: 80px;}
+h2 { font-size: 60px ; margin-bottom: 70px;}
+
+
+p{
+    font-size: 40px;
+    color: #999999;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+
+
+.jumbotron .Titulo1{
+    font-size: 80px;
+    display:flex;
+    justify-content: center;
+
+}
+
+.jumbotron .Titulo2{
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+
+}
+.jumbotron .btn-group{
+    padding: 30px;
+
+}
+.navbar{
+    background-color: rgb(37, 37, 37);
+   
+    display:flex;
+    align-items: center;
+
+}
+
+
+#hero {
+    background-image: url('img/hero.jpg');
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 500px;
+    color: #ffffff;
+
+}
+
+#hero p{
+    color: #ffffff;
+}
+.content-center{
+
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+
+}
+
+.topmargin-xs{margin-top: 15px;}
+.topmargin-sm{margin-top: 30px;}
+.topmargin-lg{margin-top: 60px;}
+
+.btnn{
+    font-size: 14px;
+    padding: 15px 26px;
+    min-width: 160px;
+    border-radius: 2px;
+    display:inline-block;
+
+}
+.btnn-light{
+    background-color: #ffffff;
+    color: #1a1a1a;
+    border: 2px solid #ffffff;
+}
+.btnn i {font-size: 14px;  margin-left: 5px;}
+
+.portfolio-container{
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+    border-radius:  2px;
+    width:650px;
+    height:550px ;
+    
+}
+.portfolio-container img{
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    width:650px;
+    height:550px 
+}
+.portfolio-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform:scale(1.2) ;
+    transform: scale(1.2);
+
+}
+
+.portfolio-details{
+    position: absolute;
+    bottom:25px;
+    left: 25px;
+    z-index:9000;
+
+}
+.portfolio-details h2{
+    margin-bottom: 0px;
+    font-size: 60px;
+}
+.portfolio-details a h2, .portfolio-details a p{
+    color: #ffffff;
+}
+
+.text-dark{
+    color: black;
+    font-size: 30px;
+
+}
+
+.Segunda-prach{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    left: 100px;
+}
+
+
+
+
+
+
+
+
+      /* pie de pagina lo negro */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+    
+
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display:flex;
+    justify-content:space-between;
+
+}
+.colum1{
+    max-width: 400px;
+}
+
+.colum h5{
+    font-size: 22px;
+
+}
+.colum p1{
+    font-size: 18px;
+    color: #c7c7c7;
+    margin-top: 20px;
+
+}
+.colum2{
+    max-width: 400px;
+}
+.colum h5{
+    font-size: 22px;
+}
+
+.colum2 .row{
+    margin-top: 20px;
+    display: flex;
+
+}
+.colum2 .row img{
+    width: 36px;
+    height: 36px;
+}
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #c7c7c7;
+}
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h5{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+.row2 img{
+    width: 36px;
+    height: 36px;
+
+}
+.row2 label{
+    margin-left: 20px;
+    max-width: 140px;
+    margin-top: 10px;
+}
+.container-footer{
+    width: 100%;
+    background: #101010;
+    
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+
+}
+    
+}
+.copyright{
+    color: #c7c7c7;
+}
+
+.copyright a{
+    color: #c7c7c7;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.information a{
+    color:#c7c7c7;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+  
+  
+
+  
+
+
+@media screen and (max-width: 1100px){
+    .container-body{
+        flex-wrap: wrap;
+    }
+    .colum1{
+        max-width: 100%;
+    }
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+@media (max-width: 575.98px) { 
+
+h1 {font-size: 40px; line-height: normal;}
+ }
+
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+
+@media (min-width: 1200px) {  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+  
+

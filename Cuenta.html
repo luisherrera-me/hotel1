@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Docu</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/Cuenta.css">
+    
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+   
+	
+
+
+
+</head>
+<body background="img/imagenhotel2.jpg">
+
+
+        <header>
+                <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+    
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#navegacion-fm">
+                                <span class="sr-only">Desplegar / Ocultar Menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+    
+                            <a href="#" class="navbar-brand">Hoteles.com</a>
+    
+                        </div>
+    
+                        <!--Comienzo Menuu-->
+    
+                        <div class="collapse navbar-collapse" id="navegacion-fm">
+                            <ul class="nav navbar-nav">
+                                <li ><a href="Index.html">Iniciar sesion </a></li>
+                                <li class="dropdown">
+    
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                                        Ayuda<span class="caret"></span>
+                                    </a>
+    
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="">Modificar Reservacion</a></li>
+                                        <li><a href="#">Preguntas frecuentes </a></li>
+                                        <li><a href="#">Comentarios Sobre el sitio web</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Ofertas</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">llamanos al 300675457</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Cuenta.html">Crear Cuentas</a></li>
+                                <li><a href="ventana.html">Sugerencias</a></li>
+                                <li><a href="Pagina.html">Mis Reservaciones</a></li>
+                                <li><a href="Comidas.html">Comidas</a></li>
+                                <li><a href="Ubicacion.html">Ubicacion</a></li>
+                                
+                            </ul>
+    
+    
+    
+    
+                        </div>
+    
+                    </div>
+                </nav>
+            </header>
+
+
+
+
+
+            
+
+
+
+
+
+            
+<div class="modal-dialog text-center">
+    <div class="col-sm-8 main-section">
+        <div class="modal-content">
+            <div class="col-12 user-img">
+                <img src="img/icon.jpg" th:src="@{/img/user.png}"/>
+            </div>
+            <form class="col-12" th:action="@{/login}" method="get">
+                <div class="form-group" id="user-group">
+                    <input type="text" class="form-control" placeholder="Nombre de usuario" name="username"/>
+                </div>
+                <div class="form-group" id="contrasena-group">
+                    <input type="password" class="form-control" placeholder="Contrasena" name="password"/>
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar </button>
+            </form>
+            <div class="col-12 forgot">
+                <a href="#">Recordar contrasena?</a>
+            </div>
+            <div th:if="${param.error}" class="alert alert-danger" role="alert">
+                Nombre de usuario y contraseña inválidos.
+            </div>
+            <div th:if="${param.logout}" class="alert alert-success" role="alert">
+                Usted ha sido desconectado.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+            <script src="js/main.js"></script>
+            <script src="js/jquery.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.flexslider.js"></script>
+           
+            <script src="js/main.js"></script>
+    
+
+
+
+
+
+
+    
+</body>
+</html>
